@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #71a6e6;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Headings styling */
+h1, h2 {
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul li {
+        flex-direction: column;   /* Stack header items vertically on mobile */
+        align-items: flex-start;   /* Align items to the start */
+    }
+
+    section {
+        margin: 5px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .project {
+        font-size: 0.9em; /* Reduce font size for project descriptions */
+    }
+
+    nav ul {
+        padding: 0; /* Remove padding for mobile nav */
+    }
+}
